@@ -1,0 +1,11 @@
+<h1>Caculator</h1>
+<p>Number 1:</p>
+<input type="number" [(ngModel)]="numberA">
+<p>Number 2</p>
+<input type="number" [(ngModel)]="numberB"><br>
+<button (click)="calculator('+')">+</button>
+<button (click)="calculator('-')">-</button>
+<button (click)="calculator('*')">*</button>
+<button (click)="calculator('%')">%</button>
+<p>Result:</p>
+<h3>{{result}}</h3>
