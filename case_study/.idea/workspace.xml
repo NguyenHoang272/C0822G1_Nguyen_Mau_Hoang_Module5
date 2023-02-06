@@ -20,134 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="869e537c-680b-4f11-890e-d2833d84812b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/html/customer.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/edit_customer.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/diem.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../typescript-is-prime/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../typescript-is-prime/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../typescript-is-prime/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../typescript-is-prime/.idea/typescript-is-prime.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../typescript-is-prime/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../typescript-is-prime/node_modules/.bin/tsc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../typescript-is-prime/node_modules/.bin/tsc.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../typescript-is-prime/node_modules/.bin/tsc.ps1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../typescript-is-prime/node_modules/.bin/tsserver" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../typescript-is-prime/node_modules/.bin/tsserver.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../typescript-is-prime/node_modules/.bin/tsserver.ps1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../typescript-is-prime/node_modules/typescript/LICENSE.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../typescript-is-prime/node_modules/typescript/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../typescript-is-prime/node_modules/typescript/SECURITY.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../typescript-is-prime/node_modules/typescript/ThirdPartyNoticeText.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../typescript-is-prime/node_modules/typescript/bin/tsc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../typescript-is-prime/node_modules/typescript/bin/tsserver" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../typescript-is-prime/node_modules/typescript/lib/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../typescript-is-prime/node_modules/typescript/lib/cancellationToken.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../typescript-is-prime/node_modules/typescript/lib/cs/diagnosticMessages.generated.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../typescript-is-prime/node_modules/typescript/lib/de/diagnosticMessages.generated.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../typescript-is-prime/node_modules/typescript/lib/dynamicImportCompat.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../typescript-is-prime/node_modules/typescript/lib/es/diagnosticMessages.generated.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../typescript-is-prime/node_modules/typescript/lib/fr/diagnosticMessages.generated.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../typescript-is-prime/node_modules/typescript/lib/it/diagnosticMessages.generated.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../typescript-is-prime/node_modules/typescript/lib/ja/diagnosticMessages.generated.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../typescript-is-prime/node_modules/typescript/lib/ko/diagnosticMessages.generated.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../typescript-is-prime/node_modules/typescript/lib/lib.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../typescript-is-prime/node_modules/typescript/lib/lib.dom.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../typescript-is-prime/node_modules/typescript/lib/lib.dom.iterable.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../typescript-is-prime/node_modules/typescript/lib/lib.es2015.collection.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../typescript-is-prime/node_modules/typescript/lib/lib.es2015.core.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../typescript-is-prime/node_modules/typescript/lib/lib.es2015.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../typescript-is-prime/node_modules/typescript/lib/lib.es2015.generator.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../typescript-is-prime/node_modules/typescript/lib/lib.es2015.iterable.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../typescript-is-prime/node_modules/typescript/lib/lib.es2015.promise.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../typescript-is-prime/node_modules/typescript/lib/lib.es2015.proxy.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../typescript-is-prime/node_modules/typescript/lib/lib.es2015.reflect.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../typescript-is-prime/node_modules/typescript/lib/lib.es2015.symbol.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../typescript-is-prime/node_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../typescript-is-prime/node_modules/typescript/lib/lib.es2016.array.include.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../typescript-is-prime/node_modules/typescript/lib/lib.es2016.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../typescript-is-prime/node_modules/typescript/lib/lib.es2016.full.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../typescript-is-prime/node_modules/typescript/lib/lib.es2017.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../typescript-is-prime/node_modules/typescript/lib/lib.es2017.full.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../typescript-is-prime/node_modules/typescript/lib/lib.es2017.intl.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../typescript-is-prime/node_modules/typescript/lib/lib.es2017.object.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../typescript-is-prime/node_modules/typescript/lib/lib.es2017.sharedmemory.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../typescript-is-prime/node_modules/typescript/lib/lib.es2017.string.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../typescript-is-prime/node_modules/typescript/lib/lib.es2017.typedarrays.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../typescript-is-prime/node_modules/typescript/lib/lib.es2018.asyncgenerator.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../typescript-is-prime/node_modules/typescript/lib/lib.es2018.asynciterable.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../typescript-is-prime/node_modules/typescript/lib/lib.es2018.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../typescript-is-prime/node_modules/typescript/lib/lib.es2018.full.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../typescript-is-prime/node_modules/typescript/lib/lib.es2018.intl.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../typescript-is-prime/node_modules/typescript/lib/lib.es2018.promise.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../typescript-is-prime/node_modules/typescript/lib/lib.es2018.regexp.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../typescript-is-prime/node_modules/typescript/lib/lib.es2019.array.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../typescript-is-prime/node_modules/typescript/lib/lib.es2019.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../typescript-is-prime/node_modules/typescript/lib/lib.es2019.full.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../typescript-is-prime/node_modules/typescript/lib/lib.es2019.intl.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../typescript-is-prime/node_modules/typescript/lib/lib.es2019.object.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../typescript-is-prime/node_modules/typescript/lib/lib.es2019.string.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../typescript-is-prime/node_modules/typescript/lib/lib.es2019.symbol.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../typescript-is-prime/node_modules/typescript/lib/lib.es2020.bigint.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../typescript-is-prime/node_modules/typescript/lib/lib.es2020.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../typescript-is-prime/node_modules/typescript/lib/lib.es2020.date.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../typescript-is-prime/node_modules/typescript/lib/lib.es2020.full.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../typescript-is-prime/node_modules/typescript/lib/lib.es2020.intl.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../typescript-is-prime/node_modules/typescript/lib/lib.es2020.number.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../typescript-is-prime/node_modules/typescript/lib/lib.es2020.promise.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../typescript-is-prime/node_modules/typescript/lib/lib.es2020.sharedmemory.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../typescript-is-prime/node_modules/typescript/lib/lib.es2020.string.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../typescript-is-prime/node_modules/typescript/lib/lib.es2020.symbol.wellknown.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../typescript-is-prime/node_modules/typescript/lib/lib.es2021.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../typescript-is-prime/node_modules/typescript/lib/lib.es2021.full.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../typescript-is-prime/node_modules/typescript/lib/lib.es2021.intl.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../typescript-is-prime/node_modules/typescript/lib/lib.es2021.promise.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../typescript-is-prime/node_modules/typescript/lib/lib.es2021.string.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../typescript-is-prime/node_modules/typescript/lib/lib.es2021.weakref.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../typescript-is-prime/node_modules/typescript/lib/lib.es2022.array.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../typescript-is-prime/node_modules/typescript/lib/lib.es2022.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../typescript-is-prime/node_modules/typescript/lib/lib.es2022.error.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../typescript-is-prime/node_modules/typescript/lib/lib.es2022.full.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../typescript-is-prime/node_modules/typescript/lib/lib.es2022.intl.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../typescript-is-prime/node_modules/typescript/lib/lib.es2022.object.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../typescript-is-prime/node_modules/typescript/lib/lib.es2022.sharedmemory.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../typescript-is-prime/node_modules/typescript/lib/lib.es2022.string.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../typescript-is-prime/node_modules/typescript/lib/lib.es5.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../typescript-is-prime/node_modules/typescript/lib/lib.es6.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../typescript-is-prime/node_modules/typescript/lib/lib.esnext.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../typescript-is-prime/node_modules/typescript/lib/lib.esnext.full.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../typescript-is-prime/node_modules/typescript/lib/lib.esnext.intl.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../typescript-is-prime/node_modules/typescript/lib/lib.esnext.promise.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../typescript-is-prime/node_modules/typescript/lib/lib.esnext.string.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../typescript-is-prime/node_modules/typescript/lib/lib.esnext.weakref.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../typescript-is-prime/node_modules/typescript/lib/lib.scripthost.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../typescript-is-prime/node_modules/typescript/lib/lib.webworker.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../typescript-is-prime/node_modules/typescript/lib/lib.webworker.importscripts.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../typescript-is-prime/node_modules/typescript/lib/lib.webworker.iterable.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../typescript-is-prime/node_modules/typescript/lib/pl/diagnosticMessages.generated.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../typescript-is-prime/node_modules/typescript/lib/protocol.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../typescript-is-prime/node_modules/typescript/lib/pt-br/diagnosticMessages.generated.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../typescript-is-prime/node_modules/typescript/lib/ru/diagnosticMessages.generated.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../typescript-is-prime/node_modules/typescript/lib/tr/diagnosticMessages.generated.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../typescript-is-prime/node_modules/typescript/lib/tsc.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../typescript-is-prime/node_modules/typescript/lib/tsserver.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../typescript-is-prime/node_modules/typescript/lib/tsserverlibrary.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../typescript-is-prime/node_modules/typescript/lib/tsserverlibrary.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../typescript-is-prime/node_modules/typescript/lib/typesMap.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../typescript-is-prime/node_modules/typescript/lib/typescript.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../typescript-is-prime/node_modules/typescript/lib/typescript.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../typescript-is-prime/node_modules/typescript/lib/typescriptServices.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../typescript-is-prime/node_modules/typescript/lib/typescriptServices.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../typescript-is-prime/node_modules/typescript/lib/typingsInstaller.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../typescript-is-prime/node_modules/typescript/lib/watchGuard.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../typescript-is-prime/node_modules/typescript/lib/zh-cn/diagnosticMessages.generated.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../typescript-is-prime/node_modules/typescript/lib/zh-tw/diagnosticMessages.generated.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../typescript-is-prime/node_modules/typescript/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../typescript-is-prime/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../typescript-is-prime/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../typescript-is-prime/src/main.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../typescript-is-prime/src/main.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../typescript-is-prime/tsconfig.json" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -175,7 +48,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../case4/C0622G1-NguyenVanHung/module5/case_study_5" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ss3/angular-calculator-app" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -189,7 +62,7 @@
       <updated>1675219497094</updated>
       <workItem from="1675219498230" duration="9000" />
       <workItem from="1675321740199" duration="3400000" />
-      <workItem from="1675405753119" duration="1191000" />
+      <workItem from="1675405753119" duration="1796000" />
     </task>
     <servers />
   </component>
@@ -209,9 +82,9 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="421" y="96" key="FileChooserDialogImpl" timestamp="1675410520229">
+    <state x="421" y="96" key="FileChooserDialogImpl" timestamp="1675411880683">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="421" y="96" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1675410520229" />
+    <state x="421" y="96" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1675411880683" />
   </component>
 </project>
