@@ -34,12 +34,7 @@ header .mid-header img{
 .navbar ul li a:hover {
     text-decoration: underline;
 }
-.menu{
-    clear: left;
-    float: left;
-    width: 100%;
-    margin-bottom: 5px;
-}
+
 .body-mid{
     width: 100%;
 }

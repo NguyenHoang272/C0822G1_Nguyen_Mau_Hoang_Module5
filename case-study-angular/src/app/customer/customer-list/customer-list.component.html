@@ -1,0 +1,53 @@
+
+
+
+<table bgcolor="#5f9ea0" class="table table-light table-striped table-bordered">
+  <tr class="table-dark text-light">
+    <th class="text-center"><i class="fa-sharp fa-solid fa-bolt"></i></th>
+    <th>Name</th>
+    <th>Birthday</th>
+    <th>Gender</th>
+    <th>Identify Card</th>
+    <th>Phone Number</th>
+    <th>Email</th>
+    <th>Address</th>
+    <th>Customer Type</th>
+    <th>View</th>
+    <th>Edit</th>
+    <th>Delete</th>
+  </tr>
+
+  <tr *ngFor="let temp of customerList;index as i">
+    <td class="table-primary">{{i + 1}}</td>
+    <td class="table-success">{{temp.name}}</td>
+    <td class="table-secondary">{{temp.dateOfBirth}}</td>
+    <td class="table-warning">{{temp.gender}}</td>
+    <td class="table-info">{{temp.idCard}}</td>
+    <td class="table-dark">{{temp.phoneNumber}}</td>
+    <td class="table-secondary">{{temp.email}}</td>
+    <td class="table-success">{{temp.address}}</td>
+    <td class="table-success">{{temp.customerType.name}}</td>
+    <td class="text-center">
+      <button class="btn btn-warning btn-outline-secondary btn-sm" data-bs-toggle="modal"
+              data-bs-target="#viewCustomer">
+        <span class=" text-warning h6 m-auto px-2">View</span>
+      </button>
+    </td>
+
+    <td class="text-center">
+      <a [routerLink]="['/editCustomer']">
+        <button class="btn btn-success btn-outline-secondary btn-sm">
+          <span class="fa-solid fa-user-pen text-light h6 m-auto px-2">Edit</span>
+        </button>
+      </a>
+    </td>
+
+    <td class="text-center">
+      <button
+              class="btn btn-danger btn-outline-secondary btn-sm" data-bs-toggle="modal"
+              data-bs-target="#deleteCustomer">
+        <span class="fa-solid fa-person-circle-minus text-light h6 m-auto px-2"></span>
+      </button>
+    </td>
+  </tr>
+</table>

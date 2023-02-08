@@ -1,29 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="BranchesTreeState">
-    <expand>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-    </expand>
-    <select />
-  </component>
   <component name="ChangeListManager">
-    <list default="true" id="869e537c-680b-4f11-890e-d2833d84812b" name="Default Changelist" comment="">
+    <list default="true" id="b1d446c7-27c4-4aba-a6b9-3105ce2bd229" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../case-study-angular/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../case-study-angular/src/app/app-routing.module.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../case-study-angular/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../case-study-angular/src/app/app.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../case-study-angular/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../case-study-angular/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../case-study-angular/src/app/facility/add-facility/add-facility.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/../case-study-angular/src/app/facility/add-facility/add-facility.component.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../case-study-angular/src/app/facility/add-facility/add-facility.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../case-study-angular/src/app/facility/add-facility/add-facility.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../case-study-angular/src/app/facility/edit-facility/edit-facility.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../case-study-angular/src/app/facility/edit-facility/edit-facility.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../case-study-angular/src/app/facility/facility-list/facility-list.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../case-study-angular/src/app/facility/facility-list/facility-list.component.html" afterDir="false" />
@@ -32,8 +13,8 @@
       <change beforePath="$PROJECT_DIR$/../case-study-angular/src/app/navigation/navigation.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../case-study-angular/src/app/navigation/navigation.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../case-study-angular/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../case-study-angular/src/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../case-study-angular/src/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/../case-study-angular/src/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/furama.css" beforeDir="false" afterPath="$PROJECT_DIR$/html/furama.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case_study/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../case_study/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case_study/html/furama.css" beforeDir="false" afterPath="$PROJECT_DIR$/../case_study/html/furama.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../~$-DN Case Study for Angular_v1.1.docx" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -41,68 +22,42 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="HTML File" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectId" id="2L7QAWldCeUITwsHplRFNVihsNL" />
+  <component name="ProjectId" id="2LRiNd8JxMdhwH2bOEb8wMCrGqB" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/angular-using-bootstrap" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="869e537c-680b-4f11-890e-d2833d84812b" name="Default Changelist" comment="" />
-      <created>1675219497094</created>
+      <changelist id="b1d446c7-27c4-4aba-a6b9-3105ce2bd229" name="Default Changelist" comment="" />
+      <created>1675840256147</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1675219497094</updated>
-      <workItem from="1675219498230" duration="9000" />
-      <workItem from="1675321740199" duration="3400000" />
-      <workItem from="1675405753119" duration="1796000" />
-      <workItem from="1675735572472" duration="1090000" />
-      <workItem from="1675752557554" duration="6359000" />
-      <workItem from="1675818937342" duration="22000" />
-      <workItem from="1675850012377" duration="585000" />
+      <updated>1675840256147</updated>
+      <workItem from="1675840257446" duration="73000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
   </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
-    <option name="oldMeFiltersMigrated" value="true" />
-  </component>
   <component name="WindowStateProjectService">
-    <state x="421" y="96" key="FileChooserDialogImpl" timestamp="1675818957256">
+    <state x="421" y="96" key="FileChooserDialogImpl" timestamp="1675840330071">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="421" y="96" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1675818957256" />
+    <state x="421" y="96" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1675840330071" />
   </component>
 </project>
