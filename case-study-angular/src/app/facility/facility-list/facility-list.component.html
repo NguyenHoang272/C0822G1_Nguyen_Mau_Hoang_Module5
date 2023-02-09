@@ -4,8 +4,8 @@
 
 <div style="margin-left: 750px; margin-top: 20px; ">
 
-    <a style=" text-decoration: none; color: black; font-size: 20px;background: #20c997;padding: 10px;border-radius: 9%"
-       [routerLink]="['/add-facility']" >ADD NEW CUSTOMER</a>
+    <a style=" text-decoration: none; color: black; font-size: 20px;background: dodgerblue;padding: 10px;border-radius: 9%"
+       [routerLink]="['/facility-add']" >ADD NEW Facility</a>
 </div>
 
   <div class="body-mid">
@@ -15,39 +15,41 @@
       <div class="card-body">
         <h6 class="card-title">Phòng 2 Giường Hướng Ra Biển</h6>
         <p class="card-text">Diện tích phòng 50m2</p>
-        <a href="#" class="btn btn-primary">Booking now</a>
-        <a href="#" class="btn btn-primary">Booking now</a>
+        <a class="btn btn-primary"  [routerLink]="['/facility-edit']" >Edit</a>
+        <a style="margin-left: 10px" href="#" class="btn btn-primary">Delete</a>
       </div>
     </div>
 
-    <div class="card" style="width: 20rem;float: left; margin-left: 70px">
+    <div class="card" style="width: 20rem; float: left; margin-left: 70px">
       <img src="https://furamavietnam.com/wp-content/uploads/2018/11/Vietnam_Danang_Furama_Ocean-Studio-Suite.jpg"
            class="card-img-top" alt="...">
       <div class="card-body">
         <h6 class="card-title">Phòng 2 Giường Hướng Ra Biển</h6>
         <p class="card-text">Diện tích phòng 50m2</p>
-        <a href="#" class="btn btn-primary">Booking now</a>
+        <a class="btn btn-primary"  [routerLink]="['/edit-facility']" >Edit</a>
+        <a style="margin-left: 10px" href="#" class="btn btn-primary">Delete</a>
       </div>
     </div>
-    <div class="card" style="width: 20rem;float: left; margin-left: 70px">
+    <div class="card" style="width: 20rem; float: left; margin-left: 70px">
       <img src="https://furamavietnam.com/wp-content/uploads/2018/11/Vietnam_Danang_Furama_Ocean-Studio-Suite.jpg"
            class="card-img-top" alt="...">
       <div class="card-body">
         <h6 class="card-title">Phòng 2 Giường Hướng Ra Biển</h6>
         <p class="card-text">Diện tích phòng 50m2</p>
-        <a href="#" class="btn btn-primary">Booking now</a>
+        <a class="btn btn-primary"  [routerLink]="['/edit-facility']" >Edit</a>
+        <a style="margin-left: 10px" href="#" class="btn btn-primary">Delete</a>
       </div>
     </div>
-    <div class="card" style="width: 20rem;float: left; margin-left: 70px">
+    <div class="card" style="width: 20rem; float: left; margin-left: 70px">
       <img src="https://furamavietnam.com/wp-content/uploads/2018/11/Vietnam_Danang_Furama_Ocean-Studio-Suite.jpg"
            class="card-img-top" alt="...">
       <div class="card-body">
         <h6 class="card-title">Phòng 2 Giường Hướng Ra Biển</h6>
         <p class="card-text">Diện tích phòng 50m2</p>
-        <a href="#" class="btn btn-primary">Booking now</a>
+        <a class="btn btn-primary"  [routerLink]="['/edit-facility']" >Edit</a>
+        <a style="margin-left: 10px" href="#" class="btn btn-primary">Delete</a>
       </div>
     </div>
-  </div>
   <nav aria-label="..." style="float: left; margin-left: 720px; margin-top: 35px">
     <ul class="pagination">
       <li class="page-item disabled">
@@ -63,6 +65,5 @@
       </li>
     </ul>
   </nav>
-
+  </div>
 <app-footer></app-footer>
-
