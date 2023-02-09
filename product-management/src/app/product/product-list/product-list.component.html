@@ -17,11 +17,34 @@
     <td>{{product.price}}</td>
     <td>{{product.description}}</td>
     <td>
-      <a [routerLink]="['/product/edit', product.id]">Edit</a>
+      <a class="btn btn-danger" [routerLink]="['/product/edit', product.id]">Edit</a>
     </td>
     <td>
-      <a [routerLink]="['/product/delete', product.id]">Delete</a>
+      <a class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#deleteModal" (click)="temp=product">
+        Xóa
+      </a>
     </td>
   </tr>
   </tbody>
 </table>
+
+<!-- Modal Delete -->
+<div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="deleteModalLabel">Xóa dịch vụ!</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <input name="deleteId" hidden id="deleteId">
+        <pre>Bạn chắn chắn muốn xóa:{{temp.name}}?</pre>
+        <pre style="color: darkred" id="deleteName"></pre>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Hủy</button>
+        <button type="submit" class="btn btn-info" (click)="delete(temp.id)" data-bs-dismiss="modal">Xác nhận</button>
+      </div>
+    </div>
+  </div>
+</div>

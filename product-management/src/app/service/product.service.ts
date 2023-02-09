@@ -1,4 +1,4 @@
-import { Injectable } from '@angular/core';
+import {Injectable} from '@angular/core';
 import {Product} from '../model/product';
 
 @Injectable({
@@ -39,7 +39,8 @@ export class ProductService {
     }
   ];
 
-  constructor() { }
+  constructor() {
+  }
 
   findProductById(id: number) {
     return this.products.find(item => item.id === id);
@@ -62,8 +63,10 @@ export class ProductService {
   }
 
   deleteProduct(id: number) {
-    this.products = this.products.filter(product => {
-      return product.id !== id;
-    });
+    for (let i = 0; i < this.products.length; i++) {
+      if (this.products[i].id === id) {
+        this.products.splice(i, 1);
+      }
+    }
   }
 }
