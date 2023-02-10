@@ -13,6 +13,8 @@ import { FacilityAddComponent } from './facility/facility-add/facility-add.compo
 import { FacilityEditComponent } from './facility/facility-edit/facility-edit.component';
 import { CustomerAddComponent } from './customer/customer-add/customer-add.component';
 import { CustomerEditComponent } from './customer/customer-edit/customer-edit.component';
+import { ContracListComponent } from './contract/contrac-list/contrac-list.component';
+import { ContractCreateComponent } from './contract/contract-create/contract-create.component';
 
 @NgModule({
     declarations: [
@@ -27,6 +29,8 @@ import { CustomerEditComponent } from './customer/customer-edit/customer-edit.co
         FacilityEditComponent,
         CustomerAddComponent,
         CustomerEditComponent,
+        ContracListComponent,
+        ContractCreateComponent,
     ],
   imports: [
     BrowserModule,

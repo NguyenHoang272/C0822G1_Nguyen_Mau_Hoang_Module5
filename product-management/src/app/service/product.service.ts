@@ -1,72 +1,55 @@
 import {Injectable} from '@angular/core';
 import {Product} from '../model/product';
+import {Observable} from 'rxjs';
+import {HttpClient} from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ProductService {
-
-  products: Product[] = [
-    {
-      id: 1,
-      name: 'IPhone 12',
-      price: 2400000,
-      description: 'New'
-    },
-    {
-      id: 2,
-      name: 'IPhone 11',
-      price: 1560000,
-      description: 'Like new'
-    },
-    {
-      id: 3,
-      name: 'IPhone X',
-      price: 968000,
-      description: '97%'
-    },
-    {
-      id: 4,
-      name: 'IPhone 8',
-      price: 7540000,
-      description: '98%'
-    },
-    {
-      id: 5,
-      name: 'IPhone 11 Pro',
-      price: 1895000,
-      description: 'Like new'
-    }
-  ];
-
-  constructor() {
+  constructor(private httpClient: HttpClient) {
   }
 
-  findProductById(id: number) {
-    return this.products.find(item => item.id === id);
+  // findProductById(id: number) {
+  //   return this.products.find(item => item.id === id);
+  // }
+
+  getAll(): Observable<Product[]> {
+    return this.httpClient.get<Product[]>('http://localhost:3000/products');
   }
 
-  findAll() {
-    return this.products;
+  findById(id: number) {
+    return this.httpClient.get<Product>('http://localhost:3000/products/' + id);
   }
 
-  saveProduct(product) {
-    this.products.push(product);
+  addProduct(event: any) {
+    return this.httpClient.post('http://localhost:3000/products', event);
   }
 
-  updateProduct(id: number, product: Product) {
-    for (let i = 0; i < this.products.length; i++) {
-      if (this.products[i].id === id) {
-        this.products[i] = product;
-      }
-    }
+  delete(id: number) {
+    return this.httpClient.delete('http://localhost:3000/products/' + id);
   }
 
-  deleteProduct(id: number) {
-    for (let i = 0; i < this.products.length; i++) {
-      if (this.products[i].id === id) {
-        this.products.splice(i, 1);
-      }
-    }
-  }
+  // saveProduct(product) {
+  //   this.products.push(product);
+  // }
+  //
+  // updateProduct(id: number, product: Product) {
+  //   for (let i = 0; i < this.products.length; i++) {
+  //     if (this.products[i].id === id) {
+  //       this.products[i] = product;
+  //     }
+  //   }
+  // }
+  //
+  // deleteProduct(id: number) {
+  //   for (let i = 0; i < this.products.length; i++) {
+  //     if (this.products[i].id === id) {
+  //       this.products.splice(i, 1);
+  //     }
+  //   }
+  // }
+
+
 }
+

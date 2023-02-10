@@ -20,7 +20,7 @@
       <a class="btn btn-danger" [routerLink]="['/product/edit', product.id]">Edit</a>
     </td>
     <td>
-      <a class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#deleteModal" (click)="temp=product">
+      <a class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#deleteModal" (click)="deleteProduct(product?.id)">
         Xóa
       </a>
     </td>
@@ -43,7 +43,7 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Hủy</button>
-        <button type="submit" class="btn btn-info" (click)="delete(temp.id)" data-bs-dismiss="modal">Xác nhận</button>
+        <button type="submit" class="btn btn-info" (click)="delete()" data-bs-dismiss="modal">Xác nhận</button>
       </div>
     </div>
   </div>

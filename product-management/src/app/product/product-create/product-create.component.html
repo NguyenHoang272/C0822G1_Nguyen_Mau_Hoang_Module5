@@ -1,6 +1,6 @@
 <h2>Tạo mới sản phẩm</h2>
 <div class="col-6">
-  <form [formGroup]="productForm" (ngSubmit)="submit()" novalidate>
+  <form [formGroup]="productForm" (ngSubmit)="createProductWithReactive()">
     <div class="row mb-3">
       <div class="col-4">
         <label for="id" class="form-label">Mã sản phẩm: </label>
@@ -18,6 +18,7 @@
       </div>
     </div>
     <div class="row mb-3">
+
       <div class="col-4">
         <label for="name" class="form-label">Tên sản phẩm: </label>
       </div>
@@ -38,8 +39,15 @@
         <label for="description" class="form-label">Mô tả: </label>
       </div>
       <div class="col-8">
-        <input type="text" class="form-control" id="description" formControlName="description" aria-describedby="descriptionError">
+        <input type="text" class="form-control" id="description" formControlName="description"
+               aria-describedby="descriptionError">
       </div>
+    </div>
+    <div>
+      <select formControlName="classroom">
+      <option *ngFor="let cate of category" [ngValue]="cate">{{cate.name}}
+      </option>
+    </select>
     </div>
     <div class="row mb-3">
       <div class="col-4"></div>

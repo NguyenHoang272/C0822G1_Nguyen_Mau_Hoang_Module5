@@ -2,13 +2,20 @@
 <app-navigation></app-navigation>
 
 
-<div style="margin-left: 750px; margin-top: 20px; ">
+<div style="margin-left: 745px; margin-top: 20px; ">
 
-    <a style=" text-decoration: none; color: black; font-size: 20px;background: dodgerblue;padding: 10px;border-radius: 9%"
-       [routerLink]="['/facility-add']" >ADD NEW Facility</a>
+<!--    <a style=" text-decoration: none; color: black; font-size: 20px;background: dodgerblue;padding: 10px;border-radius: 9%"-->
+<!--       [routerLink]="['/facility-add']" >Add New Facility</a>-->
+  <div class="container-fluid">
+    <button class="btn btn-primary btn-outline-secondary btn-sm" data-bs-toggle="modal"
+            data-bs-target="#addContract">
+      <span class="fa-solid fa-plus text-light h6 my-auto me-1"></span>
+      <span class="text-light" style="font-size: 20px" [routerLink]="['/facility-add']" > Thêm mới dịch vụ</span>
+    </button>
+  </div>
 </div>
 
-  <div class="body-mid">
+  <div>
     <div class="card" style="width: 20rem; float: left; margin-left: 100px">
       <img src="https://furamavietnam.com/wp-content/uploads/2018/11/Vietnam_Danang_Furama_Ocean-Studio-Suite.jpg"
            class="card-img-top" alt="...">

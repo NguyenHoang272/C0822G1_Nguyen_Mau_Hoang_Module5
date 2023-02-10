@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ProductDeleteComponent } from './product-delete.component';
+import { ContractCreateComponent } from './contract-create.component';
 
-describe('ProductDeleteComponent', () => {
-  let component: ProductDeleteComponent;
-  let fixture: ComponentFixture<ProductDeleteComponent>;
+describe('ContractCreateComponent', () => {
+  let component: ContractCreateComponent;
+  let fixture: ComponentFixture<ContractCreateComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ProductDeleteComponent ]
+      declarations: [ ContractCreateComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ProductDeleteComponent);
+    fixture = TestBed.createComponent(ContractCreateComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

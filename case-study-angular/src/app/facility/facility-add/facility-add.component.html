@@ -2,8 +2,6 @@
 <app-navigation></app-navigation>
 <div class=" px-5 pt-3" style="background: gainsboro;width: 100%">
   <h2 class="text-center fw-bold">ADD NEW FACILITY</h2>
-
-  ​
   <div class="d-flex justify-content-center">
     <form class="w-50 border border-2 border-success p-3 rounded formCSS" th:action="@{/facility/add}"
           th:object="${facilityDto}" method="POST">
