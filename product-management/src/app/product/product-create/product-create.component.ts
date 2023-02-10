@@ -36,6 +36,8 @@ export class ProductCreateComponent implements OnInit {
     if (this.productForm.valid) {
       // tslint:disable-next-line:radix
       this.productForm.value.id = parseInt(this.productForm.value.id);
+      // tslint:disable-next-line:no-debugger
+      debugger;
       const temp = this.productService.addProduct(this.productForm.value).subscribe(next => {
         alert('Thêm mới thành công');
         // this.toastr.success('Hello world!', 'Toastr fun!');

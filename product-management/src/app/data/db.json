@@ -1,18 +1,34 @@
 {
   "products": [
     {
-      "id": 3,
-      "name": "Hoang",
-      "price": "1200",
-      "description": "Hi",
-      "category": null
-    },
-    {
       "id": 4,
       "name": "Hung",
       "price": "7",
       "description": "Hi",
-      "category": null
+      "category": {
+        "id": 1,
+        "name": "C0822G1"
+      }
+    },
+    {
+      "id": 2,
+      "name": "Quang",
+      "price": "1200",
+      "description": "hihi",
+      "category": {
+        "id": 1,
+        "name": "C0822G1"
+      }
+    },
+    {
+      "id": 5,
+      "name": "abcđấ",
+      "price": "100000000000000",
+      "description": "Hi",
+      "category": {
+        "id": 1,
+        "name": "C0822G1"
+      }
     }
   ],
   "category": [

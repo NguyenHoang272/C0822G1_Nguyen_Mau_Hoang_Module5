@@ -1,22 +1,7 @@
 <h2>Tạo mới sản phẩm</h2>
 <div class="col-6">
   <form [formGroup]="productForm" (ngSubmit)="createProductWithReactive()">
-    <div class="row mb-3">
-      <div class="col-4">
-        <label for="id" class="form-label">Mã sản phẩm: </label>
-      </div>
-      <div class="col-8">
-        <input type="text" class="form-control" id="id" formControlName="id" aria-describedby="idError">
-        <!--        <div id="emailError" class="form-text text-danger" *ngIf="!email.valid && (email.dirty || email.touched)">-->
-        <!--          <div [hidden]="!email.errors.required">-->
-        <!--            Email is required-->
-        <!--          </div>-->
-        <!--          <div [hidden]="!email.errors.email">-->
-        <!--            Email is not format-->
-        <!--          </div>-->
-        <!--        </div>-->
-      </div>
-    </div>
+
     <div class="row mb-3">
 
       <div class="col-4">
@@ -44,10 +29,10 @@
       </div>
     </div>
     <div>
-      <select formControlName="classroom">
-      <option *ngFor="let cate of category" [ngValue]="cate">{{cate.name}}
-      </option>
-    </select>
+      <select formControlName="category">
+        <option *ngFor="let cate of category" [ngValue]="cate">{{cate.name}}
+        </option>
+      </select>
     </div>
     <div class="row mb-3">
       <div class="col-4"></div>

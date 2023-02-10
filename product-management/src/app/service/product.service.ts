@@ -18,12 +18,17 @@ export class ProductService {
     return this.httpClient.get<Product[]>('http://localhost:3000/products');
   }
 
-  findById(id: number) {
-    return this.httpClient.get<Product>('http://localhost:3000/products/' + id);
-  }
 
   addProduct(event: any) {
     return this.httpClient.post('http://localhost:3000/products', event);
+  }
+
+  findById(id: number): Observable<any> {
+    return this.httpClient.get<any>('http://localhost:3000/products/' + id);
+  }
+
+  update(id: number, product: Product): Observable<any> {
+    return this.httpClient.put<any>('http://localhost:3000/products/' + id, product);
   }
 
   delete(id: number) {
