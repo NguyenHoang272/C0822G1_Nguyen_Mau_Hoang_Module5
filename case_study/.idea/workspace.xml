@@ -20,13 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="869e537c-680b-4f11-890e-d2833d84812b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../case-study-angular/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../case-study-angular/src/app/app-routing.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../case-study-angular/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../case-study-angular/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../case-study-angular/src/app/customer/customer-list/customer-list.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../case-study-angular/src/app/customer/customer-list/customer-list.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../case-study-angular/src/app/facility/facility-add/facility-add.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../case-study-angular/src/app/facility/facility-add/facility-add.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../case-study-angular/src/app/facility/facility-list/facility-list.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../case-study-angular/src/app/facility/facility-list/facility-list.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case-study-angular/src/app/facility/facility-list/facility-list.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../case-study-angular/src/app/facility/facility-list/facility-list.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case-study-angular/src/app/model/facility.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../case-study-angular/src/app/model/facility.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/contract.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/contract.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/customer_using_facility.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/customer_using_facility.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,6 +72,7 @@
       <workItem from="1675850012377" duration="585000" />
       <workItem from="1675862925413" duration="92000" />
       <workItem from="1675949293351" duration="2170000" />
+      <workItem from="1676092393491" duration="764000" />
     </task>
     <servers />
   </component>
