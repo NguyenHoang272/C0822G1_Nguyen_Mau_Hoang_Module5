@@ -29,6 +29,26 @@
         "id": 1,
         "name": "C0822G1"
       }
+    },
+    {
+      "id": 6,
+      "name": "abcđấ",
+      "price": "100000000000000",
+      "description": "Hi",
+      "category": {
+        "id": 2,
+        "name": "C0722G1"
+      }
+    },
+    {
+      "id": 7,
+      "name": "xvxcv",
+      "price": "1111",
+      "description": "dddđ",
+      "category": {
+        "id": 2,
+        "name": "C0722G1"
+      }
     }
   ],
   "category": [

@@ -1,4 +1,18 @@
-<h1>Danh sách sản phẩm</h1>
+<!--<h1>Danh sách sản phẩm</h1>-->
+<!--Search name: <input type="text" #nameSearch>-->
+<!--<button (click)="searchName(nameSearch.value)">Tìm kiếm</button>-->
+
+<!--<div class="d-flex justify-content-between">-->
+<!--  <input class="form-control me-2" type="search" #nameSearch placeholder="Search" aria-label="Search">-->
+<!--  <button class="btn btn-outline-success" (click)="searchByName(nameSearch.value)" type="submit">Search</button>-->
+<!--</div>-->
+<div class="d-flex justify-content-between">
+  <input class="form-control me-2" type="search" #nameSearch placeholder="Search" aria-label="Search">
+  <select class="form-select" #categorySearch>
+    <option *ngFor="let item of categories" [ngValue]="item">{{item.name}}</option>
+  </select>
+  <button class="btn btn-outline-success" (click)="searchByNameAndCategory(nameSearch.value,categorySearch.value)" type="submit">Search</button>
+</div>
 <table class="table table-hover table-striped">
   <thead>
   <tr>
@@ -8,6 +22,7 @@
     <th scope="col">Mô tả</th>
     <th scope="col">Category</th>
     <th scope="col">Edit</th>
+    <th scope="col">Info</th>
     <th scope="col">Delete</th>
   </tr>
   </thead>
@@ -22,7 +37,11 @@
       <a class="btn btn-danger" [routerLink]="['/product/edit', product.id]">Edit</a>
     </td>
     <td>
-      <a class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#deleteModal" (click)="deleteProduct(product?.id)">
+      <a class="btn btn-danger" [routerLink]="['/product/info', product.id]">Info</a>
+    </td>
+    <td>
+      <a class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#deleteModal"
+         (click)="deleteProduct(product?.id)">
         Xóa
       </a>
     </td>

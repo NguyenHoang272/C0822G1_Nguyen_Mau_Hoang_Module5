@@ -2,6 +2,8 @@ import {Component, OnInit} from '@angular/core';
 import {ProductService} from '../../service/product.service';
 import {Product} from '../../model/product';
 import {Router} from '@angular/router';
+import {Category} from '../../model/category';
+import {CategoryService} from '../../service/category.service';
 
 @Component({
   selector: 'app-product-list',
@@ -11,9 +13,11 @@ import {Router} from '@angular/router';
 export class ProductListComponent implements OnInit {
   temp: Product = {};
   products: Product[] = [];
+  categories: Category[] = [];
   id: number | undefined;
 
-  constructor(private productService: ProductService, private router: Router) {}
+  constructor(private productService: ProductService, private categoryService: CategoryService, private router: Router) {
+  }
 
   ngOnInit(): void {
     this.productService.getAll().subscribe(next => {
@@ -24,6 +28,7 @@ export class ProductListComponent implements OnInit {
     }, () => {
 
     });
+    this.getAllCategory();
   }
 
   // getAll() {
@@ -33,6 +38,12 @@ export class ProductListComponent implements OnInit {
   // delete(id: number) {
   //   this.productService.deleteProduct(id);
   // }
+  getAllCategory() {
+    this.categoryService.getAll().subscribe(next => {
+      console.log(next);
+      this.categories = next;
+    });
+  }
 
   delete() {
     // console.log(this.id);
@@ -43,5 +54,11 @@ export class ProductListComponent implements OnInit {
 
   deleteProduct(id: number | undefined) {
     this.id = id;
+  }
+
+  searchByNameAndCategory(nameSearch: string, category: string) {
+    this.productService.searchByNameAndCategory(nameSearch, category).subscribe(next => {
+      this.products = next;
+    });
   }
 }

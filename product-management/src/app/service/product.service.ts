@@ -35,6 +35,10 @@ export class ProductService {
     return this.httpClient.delete('http://localhost:3000/products/' + id);
   }
 
+  searchByNameAndCategory(nameSearch: string, category: string) {
+    return this.httpClient.get<Product[]>('http://localhost:3000/products?name_like=' + nameSearch + '&&category.name=' + category);
+  }
+
   // saveProduct(product) {
   //   this.products.push(product);
   // }

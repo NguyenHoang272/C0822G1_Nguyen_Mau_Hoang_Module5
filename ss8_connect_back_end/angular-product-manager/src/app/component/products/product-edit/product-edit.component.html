@@ -1,0 +1,29 @@
+<div align="center">
+  <h1>Cập nhật sản phẩm</h1>
+  <button class="btn btn-primary" routerLink=""><i class="fa-solid fa-backward"></i> Trở về</button>
+  <p style="color: red">{{msg}}</p>
+</div>
+<form [formGroup]="productForm" (ngSubmit)="updateProduct(id)">
+  <div class="mb-3">
+    <input class="form-control" type="hidden" formControlName="id">
+  </div>
+  <div class="mb-3">
+    <label>Tên sản phẩm: </label>
+    <input class="form-control" type="text" formControlName="name">
+  </div>
+  <div class="mb-3">
+    <label>Giá: </label>
+    <input class="form-control" type="number" formControlName="price">
+  </div>
+  <div class="mb-3">
+    <label>Mô tả: </label>
+    <select formControlName="category" [compareWith]="compareFun">
+      <option *ngFor="let ct of category" [ngValue]="ct">{{ct.name}}</option>
+    </select>
+  </div>
+  <div class="mb-3">
+    <label>Mô tả: </label>
+    <input class="form-control" type="text" formControlName="description">
+  </div>
+  <button class="btn btn-primary"><i class="fa-solid fa-pen-to-square"></i> Cập nhật</button>
+</form>
