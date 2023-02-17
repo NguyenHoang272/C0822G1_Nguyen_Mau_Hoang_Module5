@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {Customer} from "../../model/customer";
+import {CustomerService} from "../../service/customer.service";
 
 @Component({
   selector: 'app-customer-list',
@@ -8,25 +9,27 @@ import {Customer} from "../../model/customer";
 })
 export class CustomerListComponent implements OnInit {
 
-  customerList: Customer[] = [
-    {
-      id: 1,
-      name: 'NVA',
-      dateOfBirth: '11 / 11 / 2000',
-      gender: 1,
-      idCard: '121212122',
-      phoneNumber: '111111111',
-      email: 'aaaa',
-      address: 'ádfgsfgsg',
-      customerType: {id: 1, name: 'vfxgfcg'},
-      status: '1',
-    }
-  ];
+  customer: Customer[] = [];
+  temp: Customer = {};
 
-  constructor() { }
+  constructor(private customerService: CustomerService) {
+    this.customerService.getAll().subscribe(next => {
+      this.customer = next;
+    });
+  }
 
   ngOnInit(): void {
+    this.customerService.getAll().subscribe(next => {
+      this.customer = next;
+    });
+  }
 
+  deleteCustomer(id: number) {
+    this.customerService.deleteCustomer(id).subscribe(next => {
+      this.customer = next;
+      alert('Delete successfully');
+      this.ngOnInit();
+    });
   }
 
 }

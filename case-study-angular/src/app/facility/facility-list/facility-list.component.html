@@ -15,62 +15,144 @@
   </div>
 </div>
 
-  <div>
-    <div class="card" style="width: 20rem; float: left; margin-left: 100px">
-      <img src="https://furamavietnam.com/wp-content/uploads/2018/11/Vietnam_Danang_Furama_Ocean-Studio-Suite.jpg"
-           class="card-img-top" alt="...">
-      <div class="card-body">
-        <h6 class="card-title">Phòng 2 Giường Hướng Ra Biển</h6>
-        <p class="card-text">Diện tích phòng 50m2</p>
-        <a class="btn btn-primary"  [routerLink]="['/facility-edit']" >Edit</a>
-        <a style="margin-left: 10px" href="#" class="btn btn-primary">Delete</a>
-      </div>
-    </div>
+<div class="d-flex" style="margin-top: 20px; margin-bottom: 20px">
+  <input style="width: 30%" #nameSearch class="form-control me-2" type="search" placeholder="Search name" aria-label="Search">
+  <select #facilitySearch>
+    <option *ngFor="let ft of facilityType" [ngValue]="ft">{{ft.name}}</option>
+  </select>
+  <button (click)="searchName(nameSearch.value,facilitySearch.value)" style="color: black;background: green"
+          class="btn btn-outline-success" type="submit">
+    Search
+  </button>
+</div>
 
-    <div class="card" style="width: 20rem; float: left; margin-left: 70px">
-      <img src="https://furamavietnam.com/wp-content/uploads/2018/11/Vietnam_Danang_Furama_Ocean-Studio-Suite.jpg"
-           class="card-img-top" alt="...">
-      <div class="card-body">
-        <h6 class="card-title">Phòng 2 Giường Hướng Ra Biển</h6>
-        <p class="card-text">Diện tích phòng 50m2</p>
-        <a class="btn btn-primary"  [routerLink]="['/edit-facility']" >Edit</a>
-        <a style="margin-left: 10px" href="#" class="btn btn-primary">Delete</a>
-      </div>
-    </div>
-    <div class="card" style="width: 20rem; float: left; margin-left: 70px">
-      <img src="https://furamavietnam.com/wp-content/uploads/2018/11/Vietnam_Danang_Furama_Ocean-Studio-Suite.jpg"
-           class="card-img-top" alt="...">
-      <div class="card-body">
-        <h6 class="card-title">Phòng 2 Giường Hướng Ra Biển</h6>
-        <p class="card-text">Diện tích phòng 50m2</p>
-        <a class="btn btn-primary"  [routerLink]="['/edit-facility']" >Edit</a>
-        <a style="margin-left: 10px" href="#" class="btn btn-primary">Delete</a>
-      </div>
-    </div>
-    <div class="card" style="width: 20rem; float: left; margin-left: 70px">
-      <img src="https://furamavietnam.com/wp-content/uploads/2018/11/Vietnam_Danang_Furama_Ocean-Studio-Suite.jpg"
-           class="card-img-top" alt="...">
-      <div class="card-body">
-        <h6 class="card-title">Phòng 2 Giường Hướng Ra Biển</h6>
-        <p class="card-text">Diện tích phòng 50m2</p>
-        <a class="btn btn-primary"  [routerLink]="['/edit-facility']" >Edit</a>
-        <a style="margin-left: 10px" href="#" class="btn btn-primary">Delete</a>
-      </div>
-    </div>
-  <nav aria-label="..." style="float: left; margin-left: 720px; margin-top: 35px">
-    <ul class="pagination">
-      <li class="page-item disabled">
-        <span class="page-link">Previous</span>
-      </li>
-      <li class="page-item"><a class="page-link" href="#">1</a></li>
-      <li class="page-item active" aria-current="page">
-        <span class="page-link">2</span>
-      </li>
-      <li class="page-item"><a class="page-link" href="#">3</a></li>
-      <li class="page-item">
-        <a class="page-link" href="#">Next</a>
-      </li>
-    </ul>
-  </nav>
-  </div>
+<div class="row" style="width: 100%">
+<!--  <div align="center" style="margin-bottom: 20px">-->
+<!--    <h1>List Facility</h1>-->
+<!--    <a routerLink="/facility/create" role="button" class="btn btn-primary">Create Facility</a>-->
+<!--  </div>-->
+  <table class="table table-striped table-bordered" style="margin-left: 10px">
+    <thead>
+    <tr>
+      <th scope="col">STT</th>
+      <th scope="col">Name</th>
+      <th scope="col">Area</th>
+      <th scope="col">Cost</th>
+      <th scope="col">Max People</th>
+      <th scope="col">Standard Room</th>
+      <th scope="col">Description Other Convenience</th>
+      <th scope="col">Pool Area</th>
+      <th scope="col">Number Of Floors</th>
+      <th scope="col">Facility Free</th>
+      <th scope="col">Facility Type</th>
+      <th scope="col">Rent Type</th>
+      <th scope="col">Edit</th>
+      <th scope="col">Delete</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let ft of facility; index as i">
+      <th scope="row">{{i + 1}}</th>
+      <td>{{ft.name}}</td>
+      <td>{{ft.area}}</td>
+      <td>{{ft.cost}}</td>
+      <td>{{ft.maxPeople}}</td>
+      <td>{{ft.standardRoom}}</td>
+      <td>{{ft.descriptionOtherConvenience}}</td>
+      <td>{{ft.poolArea}}</td>
+      <td>{{ft.numberOfFloors}}</td>
+      <td>{{ft.facilityFree}}</td>
+      <td>{{ft.facilityType.name}}</td>
+      <td>{{ft.rentType.name}}</td>
+      <td><a [routerLink]="['/facility-edit',ft.id]" role="button" class="btn btn-primary">Edit</a>
+      <td>
+        <button (click)="temp=ft" type="button" class="btn btn-primary" data-bs-toggle="modal"
+                data-bs-target="#exampleModal">
+          Delete
+        </button>
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+             aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Delete Facility</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                Do you want to delete this <span style="color: red;font-weight: bold">{{ft.name}}</span> facility ?
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel
+                </button>
+                <button (click)="deleteFacility(temp.id)" data-bs-dismiss="modal" role="button"
+                        class="btn btn-primary">Delete
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+<!--  <div>-->
+<!--    <div class="card" style="width: 20rem; float: left; margin-left: 100px">-->
+<!--      <img src="https://furamavietnam.com/wp-content/uploads/2018/11/Vietnam_Danang_Furama_Ocean-Studio-Suite.jpg"-->
+<!--           class="card-img-top" alt="...">-->
+<!--      <div class="card-body">-->
+<!--        <h6 class="card-title">Phòng 2 Giường Hướng Ra Biển</h6>-->
+<!--        <p class="card-text">Diện tích phòng 50m2</p>-->
+<!--        <a class="btn btn-primary"  [routerLink]="['/facility-edit']" >Edit</a>-->
+<!--        <a style="margin-left: 10px" href="#" class="btn btn-primary">Delete</a>-->
+<!--      </div>-->
+<!--    </div>-->
+
+<!--    <div class="card" style="width: 20rem; float: left; margin-left: 70px">-->
+<!--      <img src="https://furamavietnam.com/wp-content/uploads/2018/11/Vietnam_Danang_Furama_Ocean-Studio-Suite.jpg"-->
+<!--           class="card-img-top" alt="...">-->
+<!--      <div class="card-body">-->
+<!--        <h6 class="card-title">Phòng 2 Giường Hướng Ra Biển</h6>-->
+<!--        <p class="card-text">Diện tích phòng 50m2</p>-->
+<!--        <a class="btn btn-primary"  [routerLink]="['/edit-facility']" >Edit</a>-->
+<!--        <a style="margin-left: 10px" href="#" class="btn btn-primary">Delete</a>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--    <div class="card" style="width: 20rem; float: left; margin-left: 70px">-->
+<!--      <img src="https://furamavietnam.com/wp-content/uploads/2018/11/Vietnam_Danang_Furama_Ocean-Studio-Suite.jpg"-->
+<!--           class="card-img-top" alt="...">-->
+<!--      <div class="card-body">-->
+<!--        <h6 class="card-title">Phòng 2 Giường Hướng Ra Biển</h6>-->
+<!--        <p class="card-text">Diện tích phòng 50m2</p>-->
+<!--        <a class="btn btn-primary"  [routerLink]="['/edit-facility']" >Edit</a>-->
+<!--        <a style="margin-left: 10px" href="#" class="btn btn-primary">Delete</a>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--    <div class="card" style="width: 20rem; float: left; margin-left: 70px">-->
+<!--      <img src="https://furamavietnam.com/wp-content/uploads/2018/11/Vietnam_Danang_Furama_Ocean-Studio-Suite.jpg"-->
+<!--           class="card-img-top" alt="...">-->
+<!--      <div class="card-body">-->
+<!--        <h6 class="card-title">Phòng 2 Giường Hướng Ra Biển</h6>-->
+<!--        <p class="card-text">Diện tích phòng 50m2</p>-->
+<!--        <a class="btn btn-primary"  [routerLink]="['/edit-facility']" >Edit</a>-->
+<!--        <a style="margin-left: 10px" href="#" class="btn btn-primary">Delete</a>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  <nav aria-label="..." style="float: left; margin-left: 720px; margin-top: 35px">-->
+<!--    <ul class="pagination">-->
+<!--      <li class="page-item disabled">-->
+<!--        <span class="page-link">Previous</span>-->
+<!--      </li>-->
+<!--      <li class="page-item"><a class="page-link" href="#">1</a></li>-->
+<!--      <li class="page-item active" aria-current="page">-->
+<!--        <span class="page-link">2</span>-->
+<!--      </li>-->
+<!--      <li class="page-item"><a class="page-link" href="#">3</a></li>-->
+<!--      <li class="page-item">-->
+<!--        <a class="page-link" href="#">Next</a>-->
+<!--      </li>-->
+<!--    </ul>-->
+<!--  </nav>-->
+<!--  </div>-->
 <app-footer></app-footer>

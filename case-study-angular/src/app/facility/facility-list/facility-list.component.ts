@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import {Facility} from "../../model/facility";
+import {FacilityType} from "../../model/facility-type";
+import {FacilityService} from "../../service/facility.service";
+import {FacilityTypeService} from "../../service/facility-type.service";
 
 @Component({
   selector: 'app-facility-list',
@@ -7,15 +10,39 @@ import {Facility} from "../../model/facility";
   styleUrls: ['./facility-list.component.css']
 })
 export class FacilityListComponent implements OnInit {
-  facilityList: Facility[] = [
-    {id: 1, name: 'AAA', area: 2000, numberOfFloors: 2, maxPeople: 12, cost: 22, rentType: {id: 1, name: 'QQ'}, status: 'adgf'},
-    {id: 2, name: 'BBB', area: 3000, numberOfFloors: 7, maxPeople: 11, cost: 33, rentType: {id: 2, name: 'WW'}, status: 'sd'},
-    {id: 3, name: 'BBB', area: 3000, numberOfFloors: 7, maxPeople: 11, cost: 33, rentType: {id: 3, name: 'WW'}, status: 'sfffd'},
-  ];
+  facility: Facility[] = [];
+  temp: Facility = {};
+  facilityType: FacilityType[] = [];
 
-  constructor() { }
+  constructor(private facilityService: FacilityService, private facilityTypeService: FacilityTypeService) {
+    this.facilityService.getAll().subscribe(next => {
+      this.facility = next;
+    });
+    this.facilityTypeService.getAll().subscribe(next => {
+      this.facilityType = next;
+    });
+  }
 
-  ngOnInit(): void {
+  ngOnInit()
+    :
+    void {
+    this.facilityService.getAll().subscribe(next => {
+      this.facility = next;
+    });
+  }
+
+  deleteFacility(id: number) {
+    this.facilityService.deleteFacility(id).subscribe(next => {
+      this.facility = next;
+      alert("Delete successfully");
+      this.ngOnInit();
+    });
+  }
+
+  searchName(value: string, value2: string) {
+    this.facilityService.searchFacility(value, value2).subscribe(next => {
+      this.facility = next;
+    });
   }
 
 }

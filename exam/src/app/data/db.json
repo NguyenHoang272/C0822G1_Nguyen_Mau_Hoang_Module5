@@ -1,0 +1,26 @@
+{
+  "benhAns": [
+    {
+      "id": 1,
+      "ngayNhapVien": "2023-02-02",
+      "ngayRaVien": "2023-02-03",
+      "lyDoNhapVien": "Hi",
+      "phuongPhapDieuTri": "Hi",
+      "bacSyDieuTri": "Hi",
+      "benhNhan": {
+        "id": 1,
+        "tenBenhNhan": "Hoang"
+      }
+    }
+  ],
+  "benhNhans": [
+    {
+      "id": 1,
+      "tenBenhNhan": "Hoang"
+    },
+    {
+      "id": 2,
+      "tenBenhNhan": "Vuong"
+    }
+  ]
+}

@@ -15,7 +15,7 @@ export class ProductService {
   // }
 
   getAll(): Observable<Product[]> {
-    return this.httpClient.get<Product[]>('http://localhost:3000/products');
+    return this.httpClient.get<Product[]>('http://localhost:3000/products?_sort=name&_order=asc');
   }
 
 

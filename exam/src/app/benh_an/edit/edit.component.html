@@ -1,0 +1,72 @@
+
+
+
+<div style="background: lightgreen; width: 700px; text-align: ">
+<h1>Chỉnh Sửa Bệnh Án</h1>
+<form [formGroup]="updateForm" (ngSubmit)="update(id)">
+  <table>
+    <tr>
+      <td>Tên bệnh nhân</td>
+      <td>
+        <select formControlName="tenBenhNhan" [compareWith]="compareFun">
+          <option *ngFor="let cate of benhnhan" [ngValue]="cate">{{cate.tenBenhNhan}}</option>
+        </select>
+      </td>
+      <p style="color: red"
+         *ngIf="updateForm.controls.tenBenhNhan.hasError('required') && updateForm.controls.tenBenhNhan.touched">*
+        Can't be left
+        blank</p>
+    </tr>
+    <tr>
+      <td>Ngay nhap vien</td>
+      <td><input type="date" id="ngayNhapVien" formControlName="ngayNhapVien"></td>
+      <p style="color: red"
+         *ngIf="updateForm.controls.ngayNhapVien.hasError('required') && updateForm.controls.ngayNhapVien.touched">*
+        Can't be left
+        blank</p>
+    </tr>
+    <tr>
+      <td>ngayRaVien</td>
+      <td><input type="date" id="ngayRaVien" formControlName="ngayRaVien"></td>
+      <p style="color: red"
+         *ngIf="updateForm.controls.ngayRaVien.hasError('required') && updateForm.controls.ngayRaVien.touched">*
+        Can't be left
+        blank</p>
+    </tr>
+
+    <tr>
+      <td>lyDoNhapVien</td>
+      <td><input type="text" id="lyDoNhapVien"  formControlName="lyDoNhapVien"></td>
+      <p style="color: red"
+         *ngIf="updateForm.controls.lyDoNhapVien.hasError('required') && updateForm.controls.lyDoNhapVien.touched">*
+        Can't be left
+        blank</p>
+    </tr>
+
+    <tr>
+      <td>phuongPhapDieuTri</td>
+      <td><input type="text" id="phuongPhapDieuTri" formControlName="phuongPhapDieuTri"></td>
+      <p style="color: red"
+         *ngIf="updateForm.controls.phuongPhapDieuTri.hasError('required') && updateForm.controls.phuongPhapDieuTri.touched">*
+        Can't be left
+        blank</p>
+    </tr>
+
+    <tr>
+      <td>Bac sy</td>
+      <td><input type="text" id="bacSyDieuTri" formControlName="bacSyDieuTri" ></td>
+      <p style="color: red"
+         *ngIf="updateForm.controls.bacSyDieuTri.hasError('required') && updateForm.controls.bacSyDieuTri.touched">*
+        Can't be left
+        blank</p>
+    </tr>
+
+    <tr>
+      <td></td>
+      <td>
+        <button type="submit" class="btn btn-primary">Xác nhận</button>
+      </td>
+    </tr>
+  </table>
+</form>
+</div>

@@ -1,5 +1,9 @@
-<h2>Tạo mới sản phẩm</h2>
-<div class="col-6">
+
+
+
+<div style="background: lightgreen; width: 800px; margin-left: 500px;  ">
+<h2 style="margin-left: 200px; margin-top: 20px">Tạo mới sản phẩm</h2>
+<div class="col-6" style="margin-left: 50px">
   <form [formGroup]="productForm" (ngSubmit)="createProductWithReactive()">
 
     <div class="row mb-3">
@@ -9,16 +13,33 @@
       </div>
       <div class="col-8">
         <input type="text" class="form-control" id="name" formControlName="name" aria-describedby="nameError">
+        <p style="color: red"
+           *ngIf="productForm.controls.name.hasError('required') && productForm.controls.name.touched">*
+          Can't be left
+          blank</p>
+        <p style="color: red"
+           *ngIf="productForm.controls.name.hasError('pattern')">* Service name cannot contain numbers
+        </p>
       </div>
     </div>
+
     <div class="row mb-3">
       <div class="col-4">
         <label for="price" class="form-label">Giá sản phẩm: </label>
       </div>
       <div class="col-8">
         <input type="text" class="form-control" id="price" formControlName="price" aria-describedby="priceError">
+        <p style="color: red"
+           *ngIf="productForm.controls.price.hasError('required') && productForm.controls.price.touched">*
+          Can't be left
+          blank</p>
+        <p style="color: red"
+           *ngIf="productForm.controls.price.hasError('min')">* Pool area must be a positive integer
+        </p>
       </div>
     </div>
+
+
     <div class="row mb-3">
       <div class="col-4">
         <label for="description" class="form-label">Mô tả: </label>
@@ -26,13 +47,22 @@
       <div class="col-8">
         <input type="text" class="form-control" id="description" formControlName="description"
                aria-describedby="descriptionError">
+<!--        <p style="color: red"-->
+<!--           *ngIf="productForm.controls.description.hasError('required') && productForm.controls.description.touched">*-->
+<!--          Can't be left-->
+<!--          blank</p>-->
       </div>
     </div>
     <div>
-      <select formControlName="category">
+      <label  class="form-label">Category: </label>
+      <select formControlName="category" style="margin-left: 75px">
         <option *ngFor="let cate of category" [ngValue]="cate">{{cate.name}}
         </option>
       </select>
+<!--      <p style="color: red"-->
+<!--         *ngIf="productForm.controls.category.hasError('required') && productForm.controls.category.touched">*-->
+<!--        Can't be left-->
+<!--        blank</p>-->
     </div>
     <div class="row mb-3">
       <div class="col-4"></div>
@@ -42,4 +72,4 @@
     </div>
   </form>
 </div>
-
+</div>

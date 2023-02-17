@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {FormControl, FormGroup} from '@angular/forms';
+import {FormControl, FormGroup, Validators} from '@angular/forms';
 import {ProductService} from '../../service/product.service';
 import {Router} from '@angular/router';
 import {CategoryService} from '../../service/category.service';
@@ -17,8 +17,8 @@ export class ProductCreateComponent implements OnInit {
   constructor(private productService: ProductService, private router: Router, private categoryService: CategoryService) {
     this.productForm = new FormGroup({
       id: new FormControl(),
-      name: new FormControl(),
-      price: new FormControl(),
+      name: new FormControl('', [Validators.required, Validators.pattern('([a-zA-Z\',.-]+( [a-zA-Z\',.-]+)*){2,30}')]),
+      price: new FormControl('',[Validators.required, Validators.min(0)]),
       description: new FormControl(),
       category: new FormControl()
     });
@@ -41,7 +41,7 @@ export class ProductCreateComponent implements OnInit {
       const temp = this.productService.addProduct(this.productForm.value).subscribe(next => {
         alert('Thêm mới thành công');
         // this.toastr.success('Hello world!', 'Toastr fun!');
-        this.router.navigateByUrl('product/list');
+        this.router.navigateByUrl('');
       }, error => {
       }, () => {
       });

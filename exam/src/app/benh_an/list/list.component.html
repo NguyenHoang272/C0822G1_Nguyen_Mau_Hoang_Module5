@@ -1,0 +1,91 @@
+
+<!--<h1>Danh sách sản phẩm</h1>-->
+<!--Search name: <input type="text" #nameSearch>-->
+<!--<button (click)="searchName(nameSearch.value)">Tìm kiếm</button>-->
+
+<!--<div class="d-flex justify-content-between">-->
+<!--  <input class="form-control me-2" type="search" #nameSearch placeholder="Search" aria-label="Search">-->
+<!--  <button class="btn btn-outline-success" (click)="searchByName(nameSearch.value)" type="submit">Search</button>-->
+<!--</div>-->
+
+<!--<div style="margin-left: 730px; margin-top: 20px; margin-bottom: 10px;">-->
+<!--  <div class="container-fluid">-->
+<!--    <button class="btn btn-success btn-outline-secondary btn-sm" data-bs-toggle="modal"-->
+<!--            data-bs-target="#addContract">-->
+<!--      <span class="fa-solid fa-plus text-light h6 my-auto me-1"></span>-->
+<!--      <span class="text-light" style="font-size: 20px" [routerLink]="['/product/create']"> Thêm Mới Sản Phẩm</span>-->
+<!--    </button>-->
+<!--  </div>-->
+<!--</div>-->
+<!--<div style=" background: orange; padding: 5px">-->
+<!--  <div class="d-flex my-2">-->
+<!--    <input style="width: 400px" class="form-control me-2" type="search" #nameSearch placeholder="Search" aria-label="Search">-->
+<!--    <select style="width: 400px"  class="form-control me-2" #categorySearch>-->
+<!--      <option *ngFor="let item of categories" [ngValue]="item">{{item.name}}</option>-->
+<!--    </select>-->
+<!--    <button class="btn btn-outline-success" (click)="searchByNameAndCategory(nameSearch.value,categorySearch.value)" type="submit">Search</button>-->
+<!--  </div>-->
+<!--</div>-->
+
+<table class="table table-hover table-striped" style="background: lightgreen">
+  <thead>
+  <tr>
+    <th scope="col">STT</th>
+    <th scope="col">Ma Benh An</th>
+    <th scope="col">Ma Benh Nhan</th>
+    <th scope="col">Ten Benh Nhan</th>
+    <th scope="col">Ngay Nhap Vien</th>
+    <th scope="col">Ngay Ra Vien</th>
+    <th scope="col">Ly Do Nhap Vien</th>
+    <th scope="col">Phuong Phap Dieu Tri</th>
+    <th scope="col">Bac Sy Dieu Tri</th>
+    <th scope="col">Edit</th>
+    <th scope="col">Delete</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let benhan of benhAns index as i" >
+    <th>{{i + 1}}</th>
+    <td>{{benhan.id}}</td>
+    <td>{{benhan.benhNhan.id}}</td>
+    <td>{{benhan.benhNhan.tenBenhNhan}}</td>
+    <td>{{benhan.ngayNhapVien}}</td>
+    <td>{{benhan.ngayRaVien}}</td>
+    <td>{{benhan.lyDoNhapVien}}</td>
+    <td>{{benhan.phuongPhapDieuTri}}</td>
+    <td>{{benhan.bacSyDieuTri}}</td>
+    <td>
+      <a class="btn btn-danger" [routerLink]="['/edit', benhan.id]">Edit</a>
+    </td>
+    <td>
+      <a class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#deleteModal"
+         (click)="deleteBenhAn(benhan?.id)">
+        Xóa
+      </a>
+    </td>
+  </tr>
+  </tbody>
+</table>
+
+<!-- Modal Delete -->
+<div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="deleteModalLabel">Xóa dịch vụ!</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <input name="deleteId" hidden id="deleteId">
+        <pre>Bạn chắn chắn muốn xóa:{{id}}?</pre>
+        <pre style="color: darkred" id="deleteName"></pre>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Hủy</button>
+        <button type="submit" class="btn btn-info" (click)="delete()" data-bs-dismiss="modal">Xác nhận</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+

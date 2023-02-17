@@ -1,71 +1,108 @@
-
 <app-header></app-header>
 <app-navigation></app-navigation>
-<div class="tong">
-  <div class="container mt-5" style="margin-left: 550px;">
-    <div class="row">
-
-      <div style="background: lightgreen" class="col-lg-6 shadow-lg">
-        <form>
-          <div class="mb-5 mt-3 text-center fst-italic">
-            <h1>Edit Facility Form</h1>
-          </div>
-
-          <div class="mb-3">
-            <label class="form-label fw-bold fst-italic">Name Facility:</label>
-
-          </div>
-
-          <div class="mb-3">
-            <label  class="form-label fw-bold fst-italic">Area:</label>
-
-          </div>
-
-          <div class="mb-3">
-            <label class="form-label fw-bold fst-italic">Cost:</label>
-
-          </div>
-
-          <div class="mb-3">
-            <label class="form-label fw-bold fst-italic">Max People:</label>
-
-          </div>
-
-
-          <div class="mb-3">
-            <label  class="form-label fw-bold fst-italic">Standard Room:</label>
-          </div>
-
-          <div class="mb-3">
-            <label  class="form-label fw-bold fst-italic">Description Other
-              Convenience:</label>
-
-          </div>
-
-
-          <div id="poolArea" class="mb-3">
-            <label  class="form-label fw-bold fst-italic">Pool Area:</label>
-          </div>
-
-          <div id="numberFloors" class="mb-3">
-            <label class="form-label fw-bold fst-italic">Number Floors:</label>
-          </div>
-
-          <div id="facilityFree" class="mb-3">
-            <label class="form-label fw-bold fst-italic">Facility Free:</label>
-          </div>
-
-          <div class="mb-3">
-            <label class="form-label fw-bold fst-italic">Rent Type:</label>
-          </div>
-          <button type="submit" class="btn btn-primary mb-3 w-100">Update Facility</button>
-          <button class="btn bg-warning mb-3 w-100"><a
-            style="color: black ;text-align: center;text-decoration: none"
-            href="/facility">Back to customer list</a></button>
-        </form>
-      </div>
-      <div class="col-lg-3"></div>
-    </div>
-  </div>
+<div align="center">
+  <h1>Edit Facility</h1>
+  <a routerLink="/facility" role="button" class="btn btn-primary">Back list</a>
 </div>
+<form [formGroup]="facilityForm" (ngSubmit)="updateFacility(id)">
+  <div class="mb-3">
+    <input class="form-control" type="hidden" formControlName="id">
+  </div>
+  <div class="mb-3">
+    <label>Name:</label>
+    <input class="form-control" type="text" formControlName="name">
+    <p style="color: red"
+       *ngIf="facilityForm.controls.name.hasError('required') && facilityForm.controls.name.touched">*
+      Can't be left
+      blank</p>
+    <p style="color: red"
+       *ngIf="facilityForm.controls.name.hasError('pattern')">* Service name cannot contain numbers
+    </p>
+  </div>
+  <div class="mb-3">
+    <label>Area:</label>
+    <input class="form-control" type="number" formControlName="area">
+    <p style="color: red"
+       *ngIf="facilityForm.controls.area.hasError('required') && facilityForm.controls.area.touched">*
+      Can't be left
+      blank</p>
+  </div>
+  <div class="mb-3">
+    <label>Cost:</label>
+    <input type="number" class="form-control" formControlName="cost">
+    <p style="color: red"
+       *ngIf="facilityForm.controls.cost.hasError('required') && facilityForm.controls.cost.touched">*
+      Can't be left
+      blank</p>
+  </div>
+  <div class="mb-3">
+    <label>Max People:</label>
+    <input type="number" class="form-control" formControlName="maxPeople">
+    <p style="color: red"
+       *ngIf="facilityForm.controls.maxPeople.hasError('required') && facilityForm.controls.maxPeople.touched">*
+      Can't be left
+      blank</p>
+  </div>
+  <div class="mb-3">
+    <label>Rent Type:</label>
+    <select formControlName="rentType" [compareWith]="compareFun">
+      <option *ngFor="let rt of rentType" [ngValue]="rt">{{rt.name}}</option>
+    </select>
+    <p style="color: red"
+       *ngIf="facilityForm.controls.rentType.hasError('required') && facilityForm.controls.rentType.touched">*
+      Can't be left
+      blank</p>
+  </div>
+  <div class="mb-3">
+    <label>Standard Room:</label>
+    <input type="text" class="form-control" formControlName="standardRoom">
+    <p style="color: red"
+       *ngIf="facilityForm.controls.standardRoom.hasError('required') && facilityForm.controls.standardRoom.touched">*
+      Can't be left
+      blank</p>
+  </div>
+  <div class="mb-3">
+    <label>Description Other Convenience:</label>
+    <input type="text" class="form-control" formControlName="descriptionOtherConvenience">
+    <p style="color: red"
+       *ngIf="facilityForm.controls.descriptionOtherConvenience.hasError('required') && facilityForm.controls.descriptionOtherConvenience.touched">
+      *
+      Can't be left
+      blank</p>
+  </div>
+  <div class="mb-3">
+    <label>Pool Area: </label>
+    <input type="number" class="form-control" formControlName="poolArea">
+    <p style="color: red"
+       *ngIf="facilityForm.controls.poolArea.hasError('required') && facilityForm.controls.poolArea.touched">*
+      Can't be left
+      blank</p>
+    <p style="color: red"
+       *ngIf="facilityForm.controls.poolArea.hasError('min')">* Pool area must be a positive integer
+    </p>
+  </div>
+  <div class="mb-3">
+    <label>Number Of Floors: </label>
+    <input class="form-control" type="number" formControlName="numberOfFloors">
+    <p style="color: red"
+       *ngIf="facilityForm.controls.numberOfFloors.hasError('required') && facilityForm.controls.numberOfFloors.touched">
+      *
+      Can't be left
+      blank</p>
+    <p style="color: red"
+       *ngIf="facilityForm.controls.numberOfFloors.hasError('min')">* The number of pool floors must be a positive
+      integer
+    </p>
+  </div>
+  <div class="mb-3">
+    <label>Facility Free: </label>
+    <input class="form-control" type="text" formControlName="facilityFree">
+    <p style="color: red"
+       *ngIf="facilityForm.controls.facilityFree.hasError('required') && facilityForm.controls.facilityFree.touched">
+      *
+      Can't be left
+      blank</p>
+  </div>
+  <button class="btn btn-primary" type="submit">Edit</button>
+</form>
 

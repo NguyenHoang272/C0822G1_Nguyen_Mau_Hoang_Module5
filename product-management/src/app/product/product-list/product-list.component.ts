@@ -11,13 +11,24 @@ import {CategoryService} from '../../service/category.service';
   styleUrls: ['./product-list.component.css']
 })
 export class ProductListComponent implements OnInit {
+
+  constructor(private productService: ProductService, private categoryService: CategoryService, private router: Router) {
+  }
+
   temp: Product = {};
   products: Product[] = [];
   categories: Category[] = [];
   id: number | undefined;
+  page: number;
+  // getAll() {
+  //   return this.products = this.productService.getAll();
+  // }
 
-  constructor(private productService: ProductService, private categoryService: CategoryService, private router: Router) {
-  }
+  // delete(id: number) {
+  //   this.productService.deleteProduct(id);
+  // }
+
+
 
   ngOnInit(): void {
     this.productService.getAll().subscribe(next => {
@@ -31,13 +42,6 @@ export class ProductListComponent implements OnInit {
     this.getAllCategory();
   }
 
-  // getAll() {
-  //   return this.products = this.productService.getAll();
-  // }
-
-  // delete(id: number) {
-  //   this.productService.deleteProduct(id);
-  // }
   getAllCategory() {
     this.categoryService.getAll().subscribe(next => {
       console.log(next);

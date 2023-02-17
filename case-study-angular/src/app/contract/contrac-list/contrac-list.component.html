@@ -11,28 +11,4 @@
     <th class="text-center">Các dịch vụ đi kèm</th>
   </tr>
 
-  <tr th:each="contract, status : ${contractList}">
-    <td class="text-center" th:text="${status.count + contractList.number * 5}"></td>
-    <td th:text="${contract.facilityName}"></td>
-    <td th:text="${contract.employeeName}"></td>
-    <td th:text="${contract.customerName}"></td>
-    <td th:text="${contract.startDate}"></td>
-    <td th:text="${contract.endDate}"></td>
-    <td th:text="${'₫ ' + contract.deposit}"></td>
-    <td th:text="${'₫ ' + contract.totalMoney}"></td>
-    <td class="text-center">
-      <button th:attr="onclick=|addContractdetail('${contract.contractId}')|"
-              class="btn btn-primary btn-outline-secondary btn-sm" data-bs-toggle="modal"
-              data-bs-target="#addContractdetail">
-        <span class="fa-solid fa-plus text-light h6 m-auto"></span>
-      </button>
-
-      <a th:href="@{/contract/__${contract.contractId}__}">
-        <button class="btn btn-primary btn-outline-secondary btn-sm ms-3 px-3">
-          <span class="text-light m-auto">Danh sách dịch vụ đi kèm</span>
-        </button>
-      </a>
-
-    </td>
-  </tr>
 </table>

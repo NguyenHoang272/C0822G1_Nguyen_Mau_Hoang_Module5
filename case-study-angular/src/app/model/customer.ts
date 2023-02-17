@@ -10,5 +10,4 @@ export interface Customer {
   email?: string;
   address?: string;
   customerType?: CustomerType;
-  status?: string;
 }
